@@ -7,25 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /* Force single-column layout for #banner */
-#banner .inner {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
 
-/* Override any columns or flex properties in #banner */
-#banner .content,
-#banner .image,
-#banner header.major {
-    width: 100%; /* Ensure full-width content */
-    float: none; /* Remove any floats that might create columns */
-}
-
-/* Make sure images in #banner don’t cause column layout */
-#banner .image img {
-    width: 100%;
-    display: block;
-}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -3970,3 +3952,23 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+#banner .inner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Override any columns or flex properties in #banner */
+#banner .content,
+#banner .image,
+#banner header.major {
+    width: 100%; /* Ensure full-width content */
+    float: none; /* Remove any floats that might create columns */
+}
+
+/* Make sure images in #banner don’t cause column layout */
+#banner .image img {
+    width: 100%;
+    display: block;
+}
