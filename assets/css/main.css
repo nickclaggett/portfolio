@@ -3953,22 +3953,4 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-#banner .inner {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-}
 
-/* Override any columns or flex properties in #banner */
-#banner .content,
-#banner .image,
-#banner header.major {
-    width: 100%; /* Ensure full-width content */
-    float: none; /* Remove any floats that might create columns */
-}
-
-/* Make sure images in #banner don’t cause column layout */
-#banner .image img {
-    width: 100%;
-    display: block;
-}
