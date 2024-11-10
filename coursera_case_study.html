@@ -42,9 +42,368 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Coursera Search Function vs Competitors</h1>
+										<h1>Problem Statement:</h1>
 									</header>
-									<p>This page will be available soon</p>
+									<p>Users on Coursera often struggle to find the courses and learning materials they need due to limitations in the search functionality. Coursera's search results can be overwhelming, with less intuitive filtering, ranking options, and irrelevant search results, leading to frustration and decreased user satisfaction. Users report difficulty in narrowing down relevant courses, especially when searching for niche or specific topics. This impacts the overall user experience, reduces course enrollments, and hampers Coursera's ability to retain learners who value efficient, targeted search capabilities.</p>
+									
+									<header class="major">
+										<h1>Search Function Feature Table</h1>
+									</header>
+									<p>Tested via searching for “Learn French”, “Prepare for an Exam”, “Big Data”, “Apprendre Anglais”, “Python”, and “Interpersonal Communication”.</p>
+									<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Coursera</th>
+      <th>LinkedIn Learning</th>
+      <th>Skillsoft</th>
+      <th>Skillshare</th>
+      <th>Khan Academy</th>
+      <th>Udemy</th>
+      <th>edX</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Search Filters</td>
+      <td>Yes</td>
+      <td>Yes* irrelevant options</td>
+      <td>Yes* No price filter</td>
+      <td>Cannot view w/o paying</td>
+      <td>Yes</td>
+      <td>Yes</td>
+	    <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Ability to Filter Immediately</td>
+      <td>No* after searching, toggles stay on</td>
+      <td>No* after searching, toggles stay on</td>
+      <td>No* after searching, toggles stay on</td>
+      <td>N/A</td>
+      <td>No* after searching, toggles stay on</td>
+      <td>No* after searching, toggles stay on</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search Bar Suggestions</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Keyword Search Accuracy</td>
+      <td>Medium</td>
+      <td>Medium/Low</td>
+      <td>Medium* If no results, zero things appear</td>
+	    <td>N/A</td>
+      <td>Medium* “Learn French” results in French history</td>
+      <td>Great* Best so far</td>
+      <td>Medium* Only relevant courses appear w/ some searches - others only show one result (excel)</td>
+    </tr>
+    <tr>
+      <td>Search by Categories/Skills</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Search By Certification Type</td>
+      <td>Yes</td>
+      <td>No* Ignores typed search</td>
+      <td>Yes* Training credits for two companies</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No* You can search for Master’s programs but no certs</td>
+    </tr>
+    <tr>
+      <td>Search by Partner/Institution</td>
+      <td>Yes</td>
+      <td>No* Certifications bring you to some</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Search Result Sorting (Rating, Popularity, etc.)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>Yes* Rating</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search by Duration / Time Commitment</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Real-Time Search Updates</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search in Multiple Languages</td>
+      <td>Yes*</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes* Poor results</td>
+    </tr>
+    <tr>
+      <td>Search Result Preview</td>
+      <td>No*</td>
+      <td>No</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search Course Availability (live sessions)</td>
+      <td>No*</td>
+      <td>No</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Search by Learning Style (Video, text-based, interactive, etc.)</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>Yes* Filters between articles, courses and videos</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search by Enrollment Type</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Search by Job Progression</td>
+      <td>No*</td>
+      <td>No</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+<p>* I chose to include Skillshare to show off that their paywall does not allow potential users to navigate the site, or check to see if their desired courses are available</p>
+									<header class="major">
+										<h1>Feature Explanations</h1>
+									</header>
+									<p><b>1. Search Filters</b></p>
+									<ul>
+										<li>
+											Availability of filters (e.g., <b>price, difficulty level</b>).
+										</li>
+									</ul>
+									<p><b>2. Ability to Filter Immediately</b></p>
+									<ul>
+										<li>
+											Ability to enter parameters upon the first search.
+										</li>
+									</ul>
+									<p><b>3. Search Bar Suggestions</b></p>
+									<ul>
+										<li>
+											<b>Auto-suggestions</b> for search queries as you type.
+										</li>
+										<li>
+											Related course or topic recommendations.
+										</li>
+										<li>
+											Predictive text to help refine search terms.
+										</li>
+									</ul>
+									<p><b>4. Keyword Search Accuracy</b></p>
+									<ul>
+										<li>
+											Effectiveness of keyword matching.
+										</li>
+										<li>
+											Search results showing relevant courses based on synonyms or closely related topics.
+										</li>
+										<li>
+											Support complex search queries (e.g., using multiple keywords).
+										</li>
+									</ul>
+									<p><b>5. Search by Categories or Skills</b></p>
+									<ul>
+										<li>
+											Ability to search by specific <b>skill</b> or <b>learning path</b>.
+										</li>
+										<li>
+											Pre-defined categories (e.g., business, data science, design) that users can browse and refine.
+										</li>
+										<li>
+											Skills-based search for users looking to develop expertise in a particular area.
+										</li>
+										<li>
+											Specific product/software skills like Excel, Tableau, PowerBi etc.
+										</li>
+									</ul>
+									<p><b>6. Search by Certification Type</b></p>
+									<ul>
+										<li>
+											Ability to filter by <b>certification type</b> (e.g., professional certificates, degrees, or casual learning).
+										</li>
+									</ul>
+									<p><b>7. Search by Partner or Institution</b></p>
+									<ul>
+										<li>
+											Search results that allow users to filter courses by specific <b>universities, companies, or instructors</b>.
+										</li>
+									</ul>
+									<p><b>8. Search Result Sorting</b></p>
+									<ul>
+										<li>
+											Ability to sort by <b>relevance, popularity, ratings, newest, or enrollment numbers</b>.
+										</li>
+									</ul>
+									<p><b>9. Search by Duration</b></p>
+									<ul>
+										<li>
+											Filters for course length (e.g., <b>short courses, multi-week courses</b>).
+										</li>
+										<li>
+											Ability to filter by total time commitment or weekly hours required.
+										</li>
+									</ul>
+									<p><b>10. Real-time Search Updates</b></p>
+									<ul>
+										<li>
+											Dynamic updates of results as filters or search terms are applied without reloading the page.
+										</li>
+										<li>
+											Smooth user experience when adjusting search parameters.
+										</li>
+									</ul>
+									<p><b>11. Search in Multiple Languages</b></p>
+									<ul>
+										<li>
+											Ability to search for courses in multiple languages, with <b>language-specific search results</b>.
+										</li>
+										<li>
+											Language-based filters or separate search options for non-English speakers.
+										</li>
+									</ul>
+									<p><b>12. Search Results Preview</b></p>
+									<ul>
+										<li>
+											Ability to preview course details (e.g., instructor bio, course overview, rating) without leaving the search results page.
+										</li>
+										<li>
+											Thumbnails or <b>short video previews</b> of the course content.
+										</li>
+									</ul>
+									<p><b>13. Search by Course Availability</b></p>
+									<ul>
+										<li>
+											Option to search for <b>upcoming courses</b> or currently <b>available</b>/open courses.
+										</li>
+										<li>
+											Filter for <b>newly added courses</b> or courses starting soon.
+										</li>
+									</ul>
+									<p><b>14. Search by Learning Style or Format</b></p>
+									<ul>
+										<li>
+											Ability to filter courses based on <b>learning style</b> preferences (e.g., video-based, text-based, interactive labs, projects).
+										</li>
+									</ul>
+									<p><b>​​15. Search by Enrollment Type</b></p>
+									<ul>
+										<li>
+											Filter between <b>open enrollment</b> (anytime access) and <b>cohort-based</b> courses, where users must enroll by a specific date.
+										</li>
+										<li>
+											Options to find <b>self-paced</b> or <b>timed sessions</b> with deadlines
+										</li>
+									</ul>
+									<p><b>16. Search by Job Progression</b></p>
+									<ul>
+										<li>
+											Ability to search job titles and have relevant courses appear
+										</li>
+									</ul>
+									<header class="major">
+										<h1>Review Points</h1>
+									</header>
+									<ul>
+										<li><b>Filters:</b> Filter options are not immediately available when searching for a course. While this feature seems limited industry-wide, investigating this functionality may be beneficial. The idealistic options would be similar to house hunting websites where the searcher can put their parameters and then receive search results</li>
+										
+									<li><b>Filters:</b> If I click on one of the canned filter options while searching for courses to aid in learning french, the search results are irrelevant.
+									<ul>
+										<li>Ex: Search = Learn French</li>
+										<li>Canned Filter = Business</li>
+										<li>Results</li>
+										<li>IMG HERE</li>
+										<li>The irrelevant search results found under these parameters can be replicated with any of the canned filters </li>
+									</ul></li>
+										<li><b>Language Options:</b> Changing the language of the website from French to English results in French results, however, the courses recommended are still irrelevant.
+									<ul>
+										<li>Ex. “Learn French” still brings me Spanish, English and Mandarin courses.</li>
+										<li>Ex. “Apprendre Francais” brings two relevant courses, the rest are unrelated to my search</li>
+										<li>IMG HERE</li>
+									</ul></li>
+										<li><b>Search Quality:</b> When searching “Learn French” only two French courses are available - then subsequent results are “Covid-19 Education”,  “Introduction aux droits de l’hommes”, and “Learn Mandarin”. If there are no other courses available these results should be separated similar to how UDemy has structured it</li>
+										<li><b>Search Result Preview:</b> A searcher can view course ratings and the title, but they cannot view any of the content or a course overview - only “skills you will gain”. Udemy has a pop-up [that explains what you will learn] when your mouse hovers over the search result
+										<ul>
+										<li>IMG HERE</li>
+									</ul></li>
+									</ul>
+									<header class="major">
+										<h1>Possible Options</h1>
+									</header>
+									<p>Based on a direct feature comparison and user feedback regarding the search functions of Coursera and its competitors, Coursera could implement the following options to enhance its search functionality. Each option is plotted below according to its implementation difficulty and associated risk - considering whether the expected benefits will likely outweigh the time, labour, and advertising costs.</p>
+									<ol>
+    <li>Introduce filter options to narrow search results instantly.</li>
+    <li>Enhance the tagging feature to display more accurate, relevant results.</li>
+    <li>Provide a course preview to highlight key learning outcomes for potential learners.</li>
+    <li>Clearly distinguish search results that match user queries from unrelated content when limited relevant options exist.</li>
+    <li>Add course ratings to help users assess content quality and relevance.</li>
+    <li>Offer skill progression recommendations within search results to guide users on their learning path.</li>
+  </ol>
+
 									
 								</div>
 							</section>
